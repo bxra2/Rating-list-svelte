@@ -6,7 +6,7 @@
   
   const handleDelete = (itemId) => {
     FeedbackStore.update((currentFeedback) => {
-      return currentFeedback.filter((item) => item.id != item.id);
+      return currentFeedback.filter((item) => item.id != itemId);
     });
   };
 </script>
